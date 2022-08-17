@@ -1,0 +1,331 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+#grid__index{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "section"
+    "footer";
+ }
+header{
+   grid-area: header;
+}
+nav{
+   grid-area: nav;
+}
+section{
+   grid-area: section;
+}
+footer{
+   grid-area: footer;
+}
+
+
+/*styles a logo*/
+div img{
+   width: 60px;
+   border-radius: 100px;
+}
+header{
+   background-image: url(../img/IMG_2559.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   color: rgb(203, 203, 195);
+   
+}
+.barraNav {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-image: url(../img/IMG_1736.jpeg);
+   background-repeat:repeat;
+   background-size:cover;
+   
+}
+nav ul li{
+   background-color: rgb(187, 83, 39);
+   border-radius: 4px;
+   margin-top: 10px;
+   margin-bottom: 50px;
+   color: rgb(255, 255, 255);
+}
+nav a{
+   color: rgb(255, 255, 255);
+}
+.artUno{
+   display: flex;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border: 2px dashed;
+   padding: 5px;
+   text-align: center;
+}
+
+.artUno h2{
+   background-color: rgb(163, 163, 163);
+   color: rgb(255, 255, 255);
+}
+
+section{
+   background-color: rgb(214, 225, 178);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+#productos{
+   display: flex;
+   justify-content: space-around;
+   flex-wrap: wrap;
+
+}
+.card{
+   width: 200px;
+   height: 300px;
+   border: 1px solid rgb(0, 0, 0);
+   border-radius: 15px;
+   background-color: rgb(255, 255, 255);
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.imgCard{
+   height: 85%;
+   width: 100%;
+}
+.imagen{
+   height: 100%;
+   width: 100%;
+}
+.cuerpoUno h3{
+   display: flex;
+   justify-content: center;
+   font-size: 12px;
+}
+.cuerpoUno p{
+   display: flex;
+   justify-content: center;
+   font-size: 13px;
+   background-color: rgb(158, 158, 111);
+
+}
+#fondoObelisco{
+   text-align: center;
+   padding-left: 150px;
+   padding-right: 150px;
+   padding-top: 15px;
+}
+#fondoObelisco h2{
+   background-color: rgba(164, 103, 65, 0.772);
+   color: rgb(255, 255, 255);
+}
+#fondoObelisco p{
+   background-color:  rgba(243, 243, 243, 0.772);
+   padding-top: 110px;
+   padding-bottom: 110px;
+   color: rgb(140, 124, 124);
+}
+
+iframe{
+   margin-top: 10px;
+   margin-bottom: 10px;
+   border-radius: 100px;
+}
+
+
+footer{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   background-color: rgb(181, 244, 244);
+}
+footer ul li{
+   text-decoration:dashed;
+   animation-name: footLink;
+   animation-duration: 5s;
+   animation-timing-function: ease-in;
+   animation-iteration-count: infinite;
+}
+footer li:hover{
+   width: 25px;
+   transform: rotate(2deg);
+}
+@keyframes footLink{
+   0%{ background-color: red;}
+   25%{ background-color: rgb(235, 90, 90);}
+   50%{ background-color: rgb(131, 83, 83);}
+   75%{ background-color: rgb(228, 180, 97);}
+   90%{ background-color: rgb(231, 202, 58);}
+   100%{ background-color: rgb(200, 255, 0);}
+}
+
+/*media queri*/
+@media screen and (min-width: 480px) {
+   header{
+      background-color: aquamarine;
+   }
+   
+   #grid__index{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 80px auto auto;
+      grid-template-areas: 
+      "header header"
+      "nav section"
+      "footer footer";
+   }
+   
+   section{
+      background-color: rgb(164, 164, 164);
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+@media screen and (min-width: 600px) {
+
+
+   #grid__index{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 100px auto auto auto;
+      grid-template-areas: 
+      "header"
+      "nav"
+      "section"
+      "footer";
+   }
+   
+   header{
+      background-image: url(https://as2.ftcdn.net/v2/jpg/02/16/33/39/1000_F_216333952_tdS11hZaqhWTWRD6sgn804oTMFvgOMo8.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: rgb(203, 203, 195);
+      
+   }
+
+.artUno h2{
+   background-color: rgb(255, 255, 255);
+   color: rgb(0, 0, 0);
+}
+
+   section{
+      background-color: rgb(202, 207, 207);
+   }
+
+.barraNav{
+   background-image: url(https://as2.ftcdn.net/v2/jpg/02/16/33/39/1000_F_216333952_tdS11hZaqhWTWRD6sgn804oTMFvgOMo8.jpg);
+}
+
+.barraNav ul{
+   display:flex;
+   flex-direction: row;
+   justify-content: right;
+}
+.barraNav ul li{
+   margin-left: 15px;
+}
+
+}
+
+@media screen and (min-width: 768px ) {
+   footer{
+      background-color: rgb(163, 54, 54);
+   }
+   #grid__index{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 100px auto auto auto;
+      grid-template-areas: 
+      "header"
+      "nav"
+      "section"
+      "footer";
+   }
+ 
+   footer ul li a{
+      text-align: center;
+      color: rgb(0, 0, 0);
+      text-decoration: none;
+  }
+
+footer ul li{
+   display: inline;
+   padding: left 3px;
+} 
+
+#fondoObelisco{
+   background-image: linear-gradient(rgb(154, 151, 151), rgb(252, 201, 201));
+}
+
+#fondoObelisco h2{
+   border-radius: 15px;
+   margin-bottom: 5px;
+   width: 300px;
+   transition: width 1.5s;
+}
+
+#fondoObelisco p{
+   border-radius: 15px;
+   background-image: linear-gradient(rgb(255, 255, 255), rgb(245, 235, 235));
+   width: 300px;
+   height: 280px;
+   transition:width 1.5s;
+}
+#fondoObelisco h2:hover{
+   width:400px;
+}
+#fondoObelisco p:hover{
+   width:400px;
+}
+
+
+
+}
+
+@media screen and (min-width: 1024px) {
+   #grid__index{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 150px auto auto 25px;
+      grid-template-areas: 
+      "header"
+      "nav"
+      "section"
+      "footer";
+   }
+   nav{
+      background-color: rgb(55, 55, 151);
+   }
+}
+
+@media screen and (min-width:1200px) {
+   #grid__index{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 150px auto auto auto;
+      grid-template-areas: 
+      "header"
+      "nav"
+      "section"
+      "footer";
+   }
+
+   .artUno h2{
+      background-image: url(../img/IMG_2559.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 50px;
+      padding-bottom: 200px;
+      font-size: 110px;
+     }
+
+     .artUno p{
+      font-size: 40px;
+      width: 400px;
+
+}
