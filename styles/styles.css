@@ -34,6 +34,7 @@ div img{
    width: 60px;
    border-radius: 100px;
 }
+/*reemplazado por bootstrap
 header{
    background-image: url(../img/IMG_2559.jpg);
    background-repeat: no-repeat;
@@ -41,11 +42,12 @@ header{
    color: rgb(203, 203, 195);
    
 }
+*/
+
 .barraNav {
    display: flex;
    flex-direction: row;
    justify-content: center;
-   background-image: url(../img/IMG_1736.jpeg);
    background-repeat:repeat;
    background-size:cover;
    
@@ -71,7 +73,7 @@ nav a{
 
 .artUno h2{
    background-color: rgb(163, 163, 163);
-   color: rgb(255, 255, 255);
+   color: rgb(213, 209, 209);
 }
 
 section{
@@ -166,18 +168,16 @@ footer li:hover{
 
 /*media queri*/
 @media screen and (min-width: 480px) {
-   header{
-      background-color: aquamarine;
-   }
    
    #grid__index{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-template-rows: 80px auto auto;
       grid-template-areas: 
-      "header header"
-      "nav section"
-      "footer footer";
+      "header"
+      "nav"
+      "section"
+      "footer";
    }
    
    section{
@@ -202,8 +202,6 @@ footer li:hover{
    }
    
    header{
-      background-image: url(https://as2.ftcdn.net/v2/jpg/02/16/33/39/1000_F_216333952_tdS11hZaqhWTWRD6sgn804oTMFvgOMo8.jpg);
-      background-repeat: no-repeat;
       background-size: cover;
       color: rgb(203, 203, 195);
       
@@ -219,7 +217,7 @@ footer li:hover{
    }
 
 .barraNav{
-   background-image: url(https://as2.ftcdn.net/v2/jpg/02/16/33/39/1000_F_216333952_tdS11hZaqhWTWRD6sgn804oTMFvgOMo8.jpg);
+   background-image: url()
 }
 
 .barraNav ul{
@@ -308,7 +306,7 @@ footer ul li{
    #grid__index{
       display: grid;
       grid-template-columns: 1fr;
-      grid-template-rows: 150px auto auto auto;
+      grid-template-rows: 150px 80px auto auto;
       grid-template-areas: 
       "header"
       "nav"
@@ -316,17 +314,20 @@ footer ul li{
       "footer";
    }
 
+   .artUno{
+      background-color: rgb(127, 163, 151);
+   }
+
    .artUno h2{
-      background-image: url(../img/IMG_2559.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
+      background-color: rgb(127, 163, 151);
+      text-decoration: none;
       border-radius: 50px;
-      padding-bottom: 200px;
-      font-size: 110px;
+      padding-bottom: 20px;
+      font-size: 25px;
      }
 
      .artUno p{
-      font-size: 40px;
+      font-size: 35px;
       width: 400px;
 
 }
