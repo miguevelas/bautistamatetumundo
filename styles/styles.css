@@ -84,8 +84,10 @@ section{
    display: flex;
    justify-content: space-around;
    flex-wrap: wrap;
-
 }
+
+
+
 .card{
    width: 200px;
    height: 300px;
@@ -165,6 +167,23 @@ footer li:hover{
    100%{ background-color: rgb(200, 255, 0);}
 }
 
+.artBuscados{
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+   height: 80px;
+}
+
+.artBuscados p{
+   display: flex;
+   flex-direction: row;
+   justify-content:center;
+   padding-top: 25px;
+   letter-spacing: 5px;
+   
+}
+
+
+
 /*media queri*/
 @media screen and (min-width: 480px) {
    
@@ -230,6 +249,8 @@ footer li:hover{
 
 }
 
+
+
 @media screen and (min-width: 768px ) {
    footer{
       background-color: rgb(163, 54, 54);
@@ -283,8 +304,6 @@ footer ul li{
 
 
 
-}
-
 @media screen and (min-width: 1024px) {
    #grid__index{
       display: grid;
@@ -334,3 +353,6 @@ footer ul li{
       width: 100%;
 
 }
+
+
+
