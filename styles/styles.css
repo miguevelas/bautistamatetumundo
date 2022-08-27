@@ -128,7 +128,6 @@ nav a{
 .card{
    animation-name: modelos;
    animation-duration: 5s;
-   animation-iteration-count: ;
 }
 @keyframes modelos{
    0%{
