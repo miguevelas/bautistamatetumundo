@@ -13,7 +13,7 @@
     "nav"
     "section"
     "footer";
- }
+}
 
 nav{
    grid-area: nav;
@@ -73,6 +73,41 @@ nav a{
 .artUno h2{
    background-color: rgb(163, 163, 163);
    color: rgb(213, 209, 209);
+   animation-name: articulofont;
+   animation-duration: 3s;
+}
+
+@keyframes articulofont{
+   0% {
+      opacity: 0;
+   }
+   100%{
+      opacity: 1;
+   }
+}
+
+.artUno p{
+   animation-name: parrafoFont;
+   animation-duration: 5s;
+
+}
+
+@keyframes parrafoFont{
+   0%{
+      opacity: 0;
+      transform: scale(0.5);
+   }
+   50%{
+      opacity: 0.5;
+      transform: scale(0.8);
+      background-color: rgb(237, 237, 84);
+      transform: translateX(20%);
+   }
+   100%{
+      opacity: 1;
+      transform: scale(1);
+      background-color: rgb(238, 238, 33);
+   }
 }
 
 section{
@@ -351,4 +386,4 @@ footer ul li{
 .artUno p{
       font-size: 20px;
       width: 100%;
-¨}
+}
