@@ -110,6 +110,39 @@ nav a{
    }
 }
 
+.cards{
+   animation-name: cards;
+   animation-duration: 5s;
+}
+@keyframes cards{
+   0%{
+      transform: scale(0.5);
+      opacity: 0;
+   }
+   100%{
+      transform: scale(1);
+      opacity: 1;
+   }
+}
+
+.card{
+   animation-name: modelos;
+   animation-duration: 5s;
+   animation-iteration-count: ;
+}
+@keyframes modelos{
+   0%{
+      opacity: 0;
+      background-color: rgb(0, 0, 0);
+   }
+   100%{
+      opacity: 1;
+      background-color: rgba(0, 0, 0, 0.28);
+   }
+}
+
+
+
 section{
    background-color: rgb(214, 225, 178);
    background-repeat: no-repeat;
